@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+   
+}
+
+li {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-left: 20px;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 15px;
+  
+
+}
+
+
+.Home{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+  
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+
+    li {
+        border-bottom: 2px dashed #D3D3D3;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow:none;
+        margin-left: 0px;
+        text-align: left;
+        border-radius: 0px;    
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+  
+    li {
+        border-bottom: 2px dashed #D3D3D3;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow:none;
+        margin-left: 0px;
+        text-align: left;
+        border-radius: 0px;    
+    }
+  }
