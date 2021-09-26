@@ -5,8 +5,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
   <title>Tooday - Socail Community App</title>
   <link rel="stylesheet" href="./index.css">
 
@@ -16,9 +19,12 @@
 <body>
 
 
+ 
+
+
 <!-- Navigation Bar -->
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light pt-4">
+  <nav class="navbar  fixed-top d-lg-block  d-none navbar-expand-lg navbar-light pt-4">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="./assets/brand.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -52,6 +58,51 @@
 </nav>
 
 <!-- Navigation Bar Ends -->
+
+<section class="d-lg-none  d-block"  style="position: fixed; top:20px;right: 20px;  z-index: 66;">
+ 
+  <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    <i class="fa fa-1x fa-bars" aria-hidden="true"></i>
+  </button>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/brand.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        <p class="d-inline p-2">Tooday</p>
+      </a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        A person can't roam around his city to know what's happening out there. Due to which people miss lot of oppurunities which they can grab so Come join us
+      </div>
+      <div class="dropdown mt-3">
+      
+        <ul class="navbar-nav mr-auto" >
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#about">About us</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Our Team</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#contact">Contact us</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
 
 <!-- First Screen --> 
 
@@ -111,7 +162,7 @@
 <!--Second Screen-->
 
 
-<section id="about" class="container d-flex flex-column justify-content-evenly align-items-center w-100 vh-100 ">
+<section id="about" class="container text-center  d-flex flex-column justify-content-evenly align-items-center w-100 vh-100 ">
 
   <div class="row align-items-center">
 
@@ -130,11 +181,11 @@
 
   <div class="row align-items-center">
 
-    <div class="col-sm-6 col-12 align-items-center" >
+    <div class="col-sm-6 col-12 order-2 order-md-1 align-items-center" >
       <img src="./assets/pngegg (2).png" alt="team"  width="100%" height="100%" style="object-fit: contain;" >
     </div>
 
-    <div class="col-sm-6 col-12  align-items-center " >
+    <div class="col-sm-6 col-12 order-1 order-md-2 align-items-center " >
       <h1>Why you should join Us ?</h1>
       <p>A person can't roam around his city to know what's happening out there.
         Due to which people miss lot of oppurunities which they can grab so Come join us 
@@ -159,13 +210,13 @@
    
   </div>
 
-<section id="features" class="container d-flex flex-column justify-content-evenly align-items-center w-100 vh-100 ">
+<section id="features" class="container d-flex flex-column justify-content-evenly align-items-center w-100 min-vh-100">
 
 
 
   <div class="row  justify-content-around text-center mt-5">
 
-    <div class="col-3 align-items-center">
+    <div class="col-12 col-md-3 mb-5 mb-md-0 align-items-center">
       <div class="card border-0" >
         <i class="fa fa-4x fa-compress" aria-hidden="true"></i>
         <div class="card-body">
@@ -175,7 +226,7 @@
    
     </div>
 
-    <div class="col-3 align-items-center">
+    <div class="col-12 col-md-3  mb-5 mb-md-0 align-items-center">
       <div class="card border-0" >
         <i class="fa fa-4x fa-newspaper-o" aria-hidden="true"></i>
         <div class="card-body">
@@ -186,7 +237,7 @@
     </div>
  
 
-    <div class="col-3 align-items-center">
+    <div class="col-12 col-md-3  mb-5 mb-md-0 align-items-center">
       <div class="card border-0" >
         <i class="fa fa-4x fa-camera" aria-hidden="true"></i>
         <div class="card-body">
@@ -201,9 +252,9 @@
 
 
 
-  <div class="row  justify-content-around text-center mt-5">
+  <div class="row  justify-content-around text-center mt-0 mt-md-5">
 
-    <div class="col-3 align-items-center">
+    <div class="col-12 col-md-3   mb-5 mb-md-0 align-items-center">
       <div class="card border-0" >
         <i class="fa  fa-4x fa-user" aria-hidden="true"></i>
         <div class="card-body">
@@ -213,7 +264,7 @@
    
     </div>
 
-    <div class="col-3 align-items-center">
+    <div class="col-12 col-md-3  mb-5 mb-md-0 align-items-center">
       <div class="card border-0" >
         <i class="fa fa-4x fa-map-marker" aria-hidden="true"></i>
         <div class="card-body">
@@ -224,7 +275,7 @@
     </div>
  
 
-    <div class="col-3 align-items-center">
+    <div class="col-12 col-md-3  mb-5 mb-md-0 align-items-center">
       <div class="card border-0" >
         <i class="fa fa-4x fa-lock" aria-hidden="true"></i>
         <div class="card-body">
@@ -238,7 +289,7 @@
   </div>
 
 
-  <div class="row  d-flex text-center ">
+  <div class="row  d-none d-md-flex text-center ">
     <p style="margin-bottom: 100px;">Our Top 6 <strong>Features</strong></p>
     <nav aria-label="Page navigation example ">
   
@@ -264,12 +315,12 @@
 <!--Third Screen Ends-->
 
 
-<div  class="d-flex flex-row  vw-90 border-2 border-dark justify-content-between align-items-center">
+<div  class="d-flex flex-row  mt-5 mb-5 vw-90 border-2 border-dark justify-content-between align-items-center">
 <div  >
    <img src='./assets/leaves-transparent-png-18.png' height="100px">
 </div>
 
-<h5 class="m-5">Our Responsible Team</h5>
+<h5 class="">Our Responsible Team</h5>
 <div  >
   <img src='./assets/leaves-transparent-png-18.png' height="100px" style="transform:rotateY(180deg);">
 </div>
@@ -286,7 +337,7 @@
 
    <div class="row  justify-content-around text-center ">
 
-    <div class="col-3 ">
+    <div class="col-12 col-md-3 ">
       <div class="card border-0" >
        
         <img class="card-img-top img-fluid"  src="./assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg"  alt="Card image" 
@@ -302,7 +353,7 @@
    
     </div>
 
-    <div class="col-3 align-items-center">
+    <div class="col-12 col-md-3 align-items-center">
       <div class="card border-0" >
        
         <img class="card-img-top img-fluid"  src="./assets/sajad-nori-53eIf0k7l0E-unsplash.jpg"  alt="Card image" 
@@ -320,7 +371,7 @@
     </div>
  
 
-    <div class="col-3 align-items-center">
+    <div class="col-12 col-md-3 align-items-center">
       <div class="card border-0" >
        
         <img class="card-img-top img-fluid"  src="./assets/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg"  alt="Card image" 
@@ -354,18 +405,18 @@
 
 <!-- Fitth section-->
 
-  <section id="contact" class="container d-flex flex-column justify-content-evenly align-items-center w-100 vh-100 ">
+  <section id="contact" class="container d-flex flex-column justify-content-evenly align-items-center w-100 vh-md-100 mb-5 mb-md-0 ">
 
 
 
     <div class="row  justify-content-around align-items-center  mt-5">
   
-      <div class="col-6 align-items-center">
+      <div class="col-6 align-items-center d-none d-md-block">
         <img src="./assets/customer.png" alt="team"  width="100%" height="100%" style="object-fit: contain;" >
      
       </div>
        
-      <div class="col-6 ">
+      <div class="col-md-6 col-12 ">
         <form class="row g-3">
           <div class="col-md-6">
             <label for="inputName" class="form-label">Name</label>
